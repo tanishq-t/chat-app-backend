@@ -15,7 +15,7 @@ connectDB()
 
     const io = new Server(server, {
         cors: {
-            origin: "https://chat-app-snappy.vercel.app/",
+            origin: "https://chat-app-snappy.vercel.app",
             credentials: true,
         }
     });
