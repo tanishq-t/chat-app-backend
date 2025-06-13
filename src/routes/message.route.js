@@ -1,9 +1,9 @@
-import {Router} from "express";
-import { addMessage, getAllMessage  } from "../controllers/message.controller.js";
+import { Router } from "express";
+import { addMessage, getAllMessage } from "../controllers/message.controller.js";
 
-const router = Router()
+const router = Router();
 
-router.route("/addmsg").post(addMessage)
-router.route("/getallmsg").post(getAllMessage)
+router.post("/addmsg", addMessage);
+router.post("/getallmsg", getAllMessage);
 
-export default router
+export default router;
